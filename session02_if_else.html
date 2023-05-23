@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lệnh điều kiện if_else</title>
+</head>
+
+<body>
+    <script>
+        // Xây dựng ứng dụng xem phim: chỉ có những người >=18 tuổi thì được xem
+        // Người dưới 18 thì thông báo, tuổi còn nhỏ cần phải ăn uống thêm
+        // B1: nhập tuổi người xem phim
+        let age = Number(prompt("Nhập vào tuổi của bạn"));
+        // B2: kiểm tra tuổi người xem phim
+
+        if (age >= 18) {
+            alert("Mời bạn xem phim");
+        } else {
+            alert("Tuổi còn nhỏ cần phải ăn uống thêm");
+        }
+        // In ra số dư trong phép chia 3
+        debugger;
+        if (age % 3 == 0) {
+            alert("Tuổi chia hết cho 3");
+        } else if (age % 3 == 1) {
+            alert("Tuổi chia 3 dư 1");
+        } else {
+            alert("Tuổi chia 3 dư 2");
+        }
+        // In ra số dư trong phép chia 5
+        // Nhập vào giới tính và độ xinh --> in ra hotgirl nếu giới tính là nữ và xinh
+        let sex = prompt("Nhập vào giới tính của Hà: ");
+        let beautiful = prompt("Bạn xinh hay xấu");
+        if (sex == "Nữ" && beautiful == "xinh") {
+            alert("Hà là hotgirl đấy");
+        }
+        // if...else nested
+        // Kiểm tra tuổi có chia hết cho 2 và 3 không
+        if (age % 2 == 0) {
+            if (age % 3 == 0) {
+                alert("Tuổi chia hết cho cả 2 và 3");
+            }
+        }
+    </script>
+</body>
+
+</html>
